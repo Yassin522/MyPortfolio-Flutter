@@ -25,7 +25,7 @@ class Skills extends StatelessWidget {
           children: [
             Expanded(
               child: AnimatedCircularProgressIndacator(
-                percentage: 0.5,
+                percentage: 0.6,
                 label: "Flutter",
               ),
             ),
