@@ -34,7 +34,7 @@ List<Certificates> certificates = [
   Certificates(
     id: 3,
     name: "Google",
-    review: "Google Hash Code 2022\nGoogle Code Jam 2022",
+    review: "Google Hash Code 2022\nGoogle Code Jam 2022\nGoogle Kick Start 2022",
     userPic: "assets/images/images.png",
     color: Color(0xFFFFF3DD),
   ),
