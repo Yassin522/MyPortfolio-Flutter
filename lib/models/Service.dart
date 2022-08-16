@@ -22,13 +22,13 @@ List<Service> services = [
   ),
   Service(
     id: 2,
-    title: "Web Design",
+    title: "Flutter web app",
     image: "assets/images/desktop.png",
     color: Color(0xFFE4FFC7),
   ),
   Service(
     id: 3,
-    title: "UI Design",
+    title: "Problem solving",
     image: "assets/images/ui.png",
     color: Color(0xFFFFF3DD),
   ),

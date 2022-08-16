@@ -12,7 +12,6 @@ import '../../sections/recent_work2/recent_work2_section.dart';
 import 'components/heightlights.dart';
 import 'components/home_banner.dart';
 
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -27,12 +26,14 @@ class HomeScreen extends StatelessWidget {
         SizedBox(height: kDefaultPadding * 2),
         AboutSection(),
         Divider(),
-        ServiceSection(),
+        RecentWorkk(),
+
         Divider(),
         ExperienceSection(),
         Divider(),
-       // RecentWorkSection(),
-        RecentWorkk(),
+        // RecentWorkSection(),
+
+        ServiceSection(),
         Divider(),
         FeedbackSection(),
         Divider(),

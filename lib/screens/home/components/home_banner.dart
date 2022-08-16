@@ -107,7 +107,7 @@ class AnimatedText extends StatelessWidget {
       animatedTexts: [
         TyperAnimatedText("responsive wep and mobile app.",
             speed: Duration(milliseconds: 60)),
-        TyperAnimatedText("complete e-Commeres app UI.",
+        TyperAnimatedText("complete Flutter app",
             speed: Duration(milliseconds: 60)),
       ],
     );

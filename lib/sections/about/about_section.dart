@@ -24,29 +24,25 @@ class AboutSection extends StatelessWidget {
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Third year student in the Faculty of Information Engineering at Damascus University also I am a competitive programmer, skilled in problem solving, algorithms and data structures",
+                      "Third year student in the Faculty of Information Engineering at Damascus University also I am a competitive programmer, skilled in problem solving, algorithms and data structures, Volunteer @RBCs team to help people learn skills of Information Technology Engineering",
                 ),
               ),
-        
-            
             ],
           ),
           SizedBox(height: kDefaultPadding * 3),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-             
               ExperienceCard(numOfExp: "01"),
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Flutter Developer\nWorkable knowledge with Flutter platform,Coding knowledge in Dart,\nGood knowledge of OOPs Concepts",
+                      "Flutter developer\nMy experience includes Firebase Auth, Dart, Local Storage, version control such as Git and GitHub\nConnecting Flutter applications to back-ends, Bloc, Getx.\nGood knowledge of OOPs Concepts",
                 ),
               ),
             ],
           ),
-          
-        SizedBox(height: kDefaultPadding * 3),
+          SizedBox(height: kDefaultPadding * 3),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -60,7 +56,7 @@ class AboutSection extends StatelessWidget {
                   ],
                 ),
               ),
-             // SizedBox(width: kDefaultPadding * 1.5),
+              // SizedBox(width: kDefaultPadding * 1.5),
               InkWell(
                 onTap: _launchURL2,
                 child: Row(
@@ -78,8 +74,9 @@ class AboutSection extends StatelessWidget {
     );
   }
 
-  String _url = 'https://www.linkedin.com/in/yassin-abdulmahdi-273561210/';
-  String _url2 = 'https://drive.google.com/file/d/1vehKfwXZcITfHmR05CuWG2ZXw2keN1tf/view?usp=sharing';
+  String _url = 'https://www.linkedin.com/in/yassin-abdulmahdi/';
+  String _url2 =
+      'https://drive.google.com/file/d/1-upu-fl8j4K-43j2Y4N8crT-ELSaGZOP/view?usp=sharing';
 
   void _launchURL() async {
     if (!await launch(_url)) throw 'Could not launch $_url';

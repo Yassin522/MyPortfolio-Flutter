@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:my_profile/constants.dart';
 import 'package:my_profile/models/Recentwork2.dart';
@@ -12,17 +10,16 @@ class RecentWorkCardd extends StatefulWidget {
   });
 
   final int index;
-   final Function press;
+  final Function press;
 
   @override
   State<RecentWorkCardd> createState() => _RecentWorkCarddState(
-     press: press,
-     index: index,
-  );
+        press: press,
+        index: index,
+      );
 }
 
 class _RecentWorkCarddState extends State<RecentWorkCardd> {
-
   _RecentWorkCarddState({
     required this.press,
     required this.index,
@@ -32,13 +29,14 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
   final int index;
 
   List recents = [
-    'https://www.behance.net/gallery/135045769/MPES-Shop',
-    'https://www.behance.net/gallery/138320099/Ai-Radio'
-    'https://www.behance.net/gallery/130745125/E-commerce-App',
-    'https://www.behance.net/gallery/130745125/E-commerce-App',
-    'https://www.behance.net/gallery/135352927/Eatmore',
-    'https://www.behance.net/gallery/129876927/My-Portfolio',
-    
+    'https://www.linkedin.com/feed/update/urn:li:activity:6965249047607541760/',
+    'https://github.com/Yassin522/Wallme',
+    'https://github.com/Yassin522/Wallme-admin-panel',
+    'https://github.com/Yassin522/Flutter-ai-voice-assistant',
+    'https://github.com/Yassin522/MyPortfolio-Flutter',
+    'https://github.com/Yassin522/eBook-app',
+    'https://github.com/Yassin522/Movie-App',
+    'https://github.com/Yassin522/Mpes',
   ];
 
   void _launchURL() async {
@@ -77,7 +75,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
                 offset: Offset(0, -20),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 165,
+                  height: 135,
                   width: 190,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white, width: 5),
@@ -93,7 +91,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
                 recentworkk[widget.index].review,
                 style: TextStyle(
                   color: kTextColor,
-                  fontSize: 18,
+                  fontSize: 14,
                   fontWeight: FontWeight.w300,
                   fontStyle: FontStyle.italic,
                   height: 1.5,
@@ -101,19 +99,19 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
               ),
               SizedBox(height: kDefaultPadding * 2),
               Text(
-                  recentworkk[widget.index].name,
-                style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),
+                recentworkk[widget.index].name,
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
               ),
-                  SizedBox(height: 10),
-                        InkWell(
-                          onTap: _launchURL,
-                          child: Text(
-                            "View Details",
-                            style:
-                                TextStyle(decoration: TextDecoration.underline, color: Colors.red),
-                          ),
-                        ),
-
+              SizedBox(height: 10),
+              InkWell(
+                onTap: _launchURL,
+                child: Text(
+                  "Github | Linkedin link",
+                  style: TextStyle(
+                      decoration: TextDecoration.underline, color: Colors.red),
+                ),
+              ),
             ],
           ),
         ),
