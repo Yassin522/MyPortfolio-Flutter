@@ -144,7 +144,7 @@ class _SideMenueState extends State<SideMenue> {
   String _url2 = 'https://github.com/Yassin522';
   String _url3 =
       'https://drive.google.com/file/d/1-upu-fl8j4K-43j2Y4N8crT-ELSaGZOP/view?usp=sharing';
-      String _url4='https://www.behance.net/yassinabdelmahdi';
+  String _url4 = 'https://www.behance.net/yassinabdelmahdi';
 
   void _launchURL() async {
     if (!await launch(_url)) throw 'Could not launch $_url';
@@ -157,6 +157,7 @@ class _SideMenueState extends State<SideMenue> {
   void _launchURL3() async {
     if (!await launch(_url3)) throw 'Could not launch $_url';
   }
+
   void _launchURL4() async {
     if (!await launch(_url4)) throw 'Could not launch $_url';
   }
