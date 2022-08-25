@@ -1,6 +1,6 @@
 {
-    "name": "my_portfolio",
-    "description": "my_portfolio",
+    "name": "Yassin Abdulmahdi",
+    "description": "Yassin Abdulmahdi",
     "version": "1.0.0",
     "content_security_policy": {
         "extension_pages": "script-src 'self' ; object-src 'self'"
