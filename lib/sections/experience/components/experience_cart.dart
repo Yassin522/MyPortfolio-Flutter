@@ -41,6 +41,7 @@ class _ExperiencecardState extends State<Experiencecard> {
             boxShadow: [if (isHover) kDefaultCardShadow],
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Transform.translate(
                 offset: Offset(0, -55),
@@ -69,7 +70,12 @@ class _ExperiencecardState extends State<Experiencecard> {
                   height: 1.5,
                 ),
               ),
-              SizedBox(height: kDefaultPadding * 2),
+              Text(
+                experiences[widget.index].duration,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Text(
                 experiences[widget.index].name,
                 style: TextStyle(fontWeight: FontWeight.bold),

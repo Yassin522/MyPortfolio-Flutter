@@ -31,10 +31,10 @@ class HighLightInfo extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: HeightLight(
                         counter: AnimatedCounter(
-                          value: 40,
+                          value: 80,
                           text: "+",
                         ),
-                        label: "Behance",
+                        label: "Github",
                       ),
                     ),
                   ],
@@ -45,7 +45,7 @@ class HighLightInfo extends StatelessWidget {
                   children: [
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 4,
+                        value: 5,
                         text: "+",
                       ),
                       label: "Github Projects",

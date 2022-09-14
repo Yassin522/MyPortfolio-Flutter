@@ -17,7 +17,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/bg.jpeg",
+            "assets/images/288728953_3105534909776009_4860460118475979015_n.jpg",
             fit: BoxFit.cover,
           ),
           Container(
@@ -106,9 +106,9 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText("responsive wep and mobile app.",
-            speed: Duration(milliseconds: 60)),
+            speed: Duration(milliseconds: 120)),
         TyperAnimatedText("complete Flutter app",
-            speed: Duration(milliseconds: 60)),
+            speed: Duration(milliseconds: 120)),
       ],
     );
   }
