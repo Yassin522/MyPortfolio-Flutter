@@ -16,9 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       scrollBehavior: MaterialScrollBehavior().copyWith(
         dragDevices: {
-          PointerDeviceKind.mouse, PointerDeviceKind.touch,
-           PointerDeviceKind.stylus, PointerDeviceKind.unknown
-           },
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown
+        },
       ),
       debugShowCheckedModeBanner: false,
       title: 'Yassin Abdulmahdi',
