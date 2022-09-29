@@ -12,7 +12,7 @@
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
  <!--- <base href="/">-->
- <link rel="stylesheet" type="text/css" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
 
  <base href="$FLUTTER_BASE_HREF">
 
@@ -40,26 +40,17 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
 
-       <div class="center">
-        <div class="sk-chase">
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-        </div>
+       <div id="loader">
+        <h1 id="loader-title">Loading ...</h1>
+        <div class="lds-dual-ring"></div>
     </div>
-    <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('flutter_service_worker.js');
-            });
-        }
-    </script>
+    
+    <!-- We'll tell flutter to remove the loader when it has finished loading -->
+    
+      <script src="main.dart.js" type="application/javascript"
+        onendload="document.getElementById('loader').remove();"></script>
+
+
     <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
