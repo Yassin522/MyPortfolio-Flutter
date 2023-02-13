@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="height:600px; width:350px">
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -11,10 +12,10 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
- <!--- <base href="/">-->
- <link rel="stylesheet" href="styles.css">
+  <!--- <base href="/">-->
+  <link rel="stylesheet" href="styles.css">
 
- <base href="$FLUTTER_BASE_HREF">
+  <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -27,30 +28,53 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
   <title>Yassin Abdulmahdi</title>
   <link rel="manifest" href="manifest.json">
 
 
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
 
-       <div id="loader">
-        <h1 id="loader-title">Loading ...</h1>
-        <div class="lds-dual-ring"></div>
-    </div>
-    
-    <!-- We'll tell flutter to remove the loader when it has finished loading -->
-    
-      <script src="main.dart.js" type="application/javascript"
-        onendload="document.getElementById('loader').remove();"></script>
+  <div id="loader">
+    <h1 id="loader-title">Loading ...</h1>
+    <div class="lds-dual-ring"></div>
+  </div>
+
+  <!-- We'll tell flutter to remove the loader when it has finished loading -->
+
+  <script src="main.dart.js" type="application/javascript"
+    onendload="document.getElementById('loader').remove();"></script>
 
 
-    <script src="main.dart.js" type="application/javascript"></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCGKEX_00bhstrspnyKS3Xg3qHRhPLz1ss",
+      authDomain: "yassin-abdulmahdi-ba531.firebaseapp.com",
+      projectId: "yassin-abdulmahdi-ba531",
+      storageBucket: "yassin-abdulmahdi-ba531.appspot.com",
+      messagingSenderId: "534646807340",
+      appId: "1:534646807340:web:e628f2b5784932431e2a89"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
 </body>
+
 </html>

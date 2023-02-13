@@ -24,7 +24,7 @@ class AboutSection extends StatelessWidget {
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Third year student in the Faculty of Information Engineering at Damascus University also I am a competitive programmer, skilled in problem solving, algorithms and data structures, Volunteer @RBCs team to help people learn skills of Information Technology Engineering",
+                      "CS student at the Faculty of Information Engineering at Damascus University also I am a competitive programmer, skilled in problem solving, algorithms and data structures, Volunteer @RBCs team to help people learn skills of Information Technology Engineering",
                 ),
               ),
             ],
@@ -37,7 +37,20 @@ class AboutSection extends StatelessWidget {
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Flutter developer\nMy experience includes Firebase Auth, Dart, Local Storage, version control such as Git and GitHub\nConnecting Flutter applications to back-ends, Bloc, Getx.\nGood knowledge of OOPs Concepts",
+                      "Flutter developer\nI have developed expertise in a range of technical skills including Firebase, version control with Git and GitHub, and connecting Flutter applications to backends. My objective is to continue applying these abilities as a Flutter developer while also learning new skills in the field of mobile application development.",
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: kDefaultPadding * 3),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ExperienceCard(numOfExp: "01"),
+              Expanded(
+                child: AboutSectionText(
+                  text:
+                      "I am particularly interested in the field of artificial intelligence (AI). I have had the opportunity to study the principles of machine learning and explore the many applications of AI in a variety of contexts. I am particularly interested in the ways that AI can be used to improve decision-making, automate processes, and drive innovation.\nI have gained experience in machine learning through courses focused on topics such as supervised and unsupervised learning, model evaluation, and deep learning. These courses have given me the opportunity to apply my programming skills to the field of machine learning, and have prepared me to tackle complex data-driven problems and projects.",
                 ),
               ),
             ],

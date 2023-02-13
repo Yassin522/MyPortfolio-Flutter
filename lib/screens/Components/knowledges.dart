@@ -31,6 +31,15 @@ class Knowledges extends StatelessWidget {
           text: "Git , Github",
         ),
         KnowledgeText(
+          text: "Machine Learning",
+        ),
+        KnowledgeText(
+          text: "Data Science",
+        ),
+        KnowledgeText(
+          text: "OOP, clean code",
+        ),
+         KnowledgeText(
           text: "OOP, clean code",
         ),
       ],

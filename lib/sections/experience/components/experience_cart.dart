@@ -33,7 +33,7 @@ class _ExperiencecardState extends State<Experiencecard> {
           duration: duration,
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          height: 350,
+          height: 370,
           width: 350,
           decoration: BoxDecoration(
             color: experiences[widget.index].color,
@@ -72,13 +72,13 @@ class _ExperiencecardState extends State<Experiencecard> {
               ),
               Text(
                 experiences[widget.index].duration,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: kTextColor),
               ),
               Text(
                 experiences[widget.index].name,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: kTextColor),
               )
             ],
           ),

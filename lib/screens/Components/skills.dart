@@ -34,8 +34,8 @@ class Skills extends StatelessWidget {
             ),
             Expanded(
               child: AnimatedCircularProgressIndacator(
-                percentage: 0.4,
-                label: "CP",
+                percentage: 0.6,
+                label: "Python",
               ),
             ),
             SizedBox(
@@ -43,8 +43,8 @@ class Skills extends StatelessWidget {
             ),
             Expanded(
               child: AnimatedCircularProgressIndacator(
-                percentage: 0.6,
-                label: "Firebase",
+                percentage: 0.4,
+                label: "ML",
               ),
             ),
           ],

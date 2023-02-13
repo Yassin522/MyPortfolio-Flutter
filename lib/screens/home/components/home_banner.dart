@@ -44,21 +44,24 @@ class HomeBanner extends StatelessWidget {
                 if (Responsive.isMobileLarge(context))
                   const SizedBox(height: defaultPadding / 2),
                 MyBuildAnimatedText(),
+
+                MyBuildAnimatedText2(),
+
                 SizedBox(height: defaultPadding),
-                if (!Responsive.isMobileLarge(context))
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: defaultPadding * 2,
-                          vertical: defaultPadding),
-                      backgroundColor: primaryColor,
-                    ),
-                    child: Text(
-                      "EXPLORE NOW",
-                      style: TextStyle(color: darkColor),
-                    ),
-                  ),
+                // if (!Responsive.isMobileLarge(context))
+                //   ElevatedButton(
+                //     onPressed: () {},
+                //     style: TextButton.styleFrom(
+                //       padding: EdgeInsets.symmetric(
+                //           horizontal: defaultPadding * 2,
+                //           vertical: defaultPadding),
+                //       backgroundColor: primaryColor,
+                //     ),
+                //     child: Text(
+                //       "EXPLORE NOW",
+                //       style: TextStyle(color: darkColor),
+                //     ),
+                //   ),
               ],
             ),
           ),
@@ -83,7 +86,7 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          Text("I build "),
+          Text("I built "),
           Responsive.isMobile(context)
               ? Expanded(child: AnimatedText())
               : AnimatedText(),
@@ -105,9 +108,11 @@ class AnimatedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedTextKit(
       animatedTexts: [
-        TyperAnimatedText("responsive wep and mobile app.",
+        TyperAnimatedText("responsive web and mobile app.",
             speed: Duration(milliseconds: 120)),
-        TyperAnimatedText("complete Flutter app",
+        TyperAnimatedText("complete School Management System",
+            speed: Duration(milliseconds: 120)),
+        TyperAnimatedText("complete ecommerce app ",
             speed: Duration(milliseconds: 120)),
       ],
     );
@@ -127,6 +132,74 @@ class FlutterCodedText extends StatelessWidget {
         children: [
           TextSpan(
             text: "Flutter",
+            style: TextStyle(
+              color: primaryColor,
+            ),
+          ),
+          TextSpan(text: ">"),
+        ],
+      ),
+    );
+  }
+}
+
+class MyBuildAnimatedText2 extends StatelessWidget {
+  const MyBuildAnimatedText2({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTextStyle(
+      style: Theme.of(context).textTheme.subtitle1!,
+      maxLines: 1,
+      child: Row(
+        children: [
+          if (!Responsive.isMobileLarge(context)) FlutterCodedText2(),
+          if (!Responsive.isMobileLarge(context))
+            SizedBox(width: defaultPadding / 2),
+          Text("I built "),
+          Responsive.isMobile(context)
+              ? Expanded(child: AnimatedText())
+              : AnimatedText2(),
+          if (!Responsive.isMobileLarge(context))
+            SizedBox(width: defaultPadding / 2),
+          if (!Responsive.isMobileLarge(context)) FlutterCodedText2(),
+        ],
+      ),
+    );
+  }
+}
+
+class AnimatedText2 extends StatelessWidget {
+  const AnimatedText2({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedTextKit(
+      animatedTexts: [
+        TyperAnimatedText("Heartbeat Categorization system",
+            speed: Duration(milliseconds: 100)),
+      ],
+    );
+  }
+}
+
+class FlutterCodedText2 extends StatelessWidget {
+  const FlutterCodedText2({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text.rich(
+      TextSpan(
+        text: "<",
+        children: [
+          TextSpan(
+            text: "Ai",
             style: TextStyle(
               color: primaryColor,
             ),

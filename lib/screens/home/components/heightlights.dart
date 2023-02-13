@@ -22,7 +22,7 @@ class HighLightInfo extends StatelessWidget {
                   children: [
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 500,
+                        value: 2500,
                         text: "+",
                       ),
                       label: "Linkedin",
@@ -31,7 +31,7 @@ class HighLightInfo extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: HeightLight(
                         counter: AnimatedCounter(
-                          value: 80,
+                          value: 90,
                           text: "+",
                         ),
                         label: "Github",
@@ -45,7 +45,7 @@ class HighLightInfo extends StatelessWidget {
                   children: [
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 5,
+                        value: 10,
                         text: "+",
                       ),
                       label: "Github Projects",
@@ -54,10 +54,10 @@ class HighLightInfo extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: HeightLight(
                         counter: AnimatedCounter(
-                          value: 800,
+                          value: 5,
                           text: "+",
                         ),
-                        label: "instagram",
+                        label: "kaggle projects",
                       ),
                     ),
                   ],
@@ -69,31 +69,31 @@ class HighLightInfo extends StatelessWidget {
               children: [
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 500,
+                    value: 2500,
                     text: "+",
                   ),
                   label: "Linkedin",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 40,
+                    value: 90,
                     text: "+",
                   ),
-                  label: "Behance",
+                  label: "Github",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 4,
+                    value: 10,
                     text: "+",
                   ),
                   label: "Github Projects",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 800,
+                    value: 5,
                     text: "+",
                   ),
-                  label: "instagram",
+                  label: "kaggle projects",
                 ),
               ],
             ),

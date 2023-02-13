@@ -15,36 +15,42 @@ class Certificates {
 
 // List of demo feedbacks
 List<Certificates> certificates = [
-
-   Certificates(
+  Certificates(
     id: 1,
     name: "ICPC-ACM",
-    review: "12th place at The 2020 Al-Baath and Hama university contest.\nHonorable Mention at The 2021 Damascus Collegiate Programming Contest.\n146th place at The 2021 ACPC Kickoff Online Individual Contest.",
+    review:
+        "12th place at The 2020 Al-Baath and Hama university contest.\nHonorable Mention at The 2021 Damascus Collegiate Programming Contest.\n146th place at The 2021 ACPC Kickoff Online Individual Contest.",
     userPic: "assets/images/hhh.png",
     color: Color(0xFFFFF3DD),
   ),
-
   Certificates(
     id: 2,
     name: "Coursera",
-    review:  'Version Control with Git.\n Build Photo Gallery Mobile App With Flutter\n How to Write a Resume (Project-Centered Course)\nCreating an Interactive Story with Flutter.\nIntroduction to Game Development.\n Cryptography and Information Theory\nProgramming for Everybody (Getting Started with Python)',
+    review:
+        'Version Control with Git.\n Build Photo Gallery Mobile App With Flutter\n How to Write a Resume (Project-Centered Course)\nCreating an Interactive Story with Flutter.\nIntroduction to Game Development.\n Cryptography and Information Theory\nProgramming for Everybody (Getting Started with Python)',
     userPic: "assets/images/2048px-Coursera-Logo_600x600.svg.png",
     color: Colors.white,
   ),
   Certificates(
     id: 3,
     name: "Google",
-    review: "Google Hash Code 2022\nGoogle Code Jam 2022\nGoogle Kick Start 2022",
+    review:
+        "Google Hash Code 2022\nGoogle Code Jam 2022\nGoogle Kick Start 2022",
     userPic: "assets/images/images.png",
     color: Color(0xFFFFF3DD),
   ),
-    Certificates(
+  Certificates(
     id: 4,
+    name: "DataCamp",
+    review: "",
+    userPic: "assets/images/1603188329234.jpeg",
+    color: Color(0xFFFFF3DD),
+  ),
+  Certificates(
+    id: 5,
     name: "HackeRank",
     review: "Problem Solving (Basic)",
     userPic: "assets/images/HackerRank_Icon-1000px.png",
     color: Color(0xFFFFF3DD),
   ),
-  
 ];
-
