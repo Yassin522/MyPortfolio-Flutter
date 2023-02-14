@@ -76,8 +76,8 @@ class _DSprojectsCardState extends State<DSprojectsCard> {
                 offset: Offset(0, -20),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 100,
-                  width: 155,
+                  height: 90,
+                  width: 145,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white, width: 5),
                     boxShadow: [if (!isHover) kDefaultCardShadow],

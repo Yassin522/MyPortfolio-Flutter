@@ -44,8 +44,8 @@ class _CertificatecardState extends State<Certificatecard> {
                 offset: Offset(0, -55),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 90,
-                  width: 90,
+                  height: 80,
+                  width: 80,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 5),
