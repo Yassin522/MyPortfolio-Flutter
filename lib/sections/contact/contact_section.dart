@@ -42,20 +42,21 @@ class ContactSection extends StatelessWidget {
 
 class ContactBox extends StatelessWidget {
   List contacts = [
-     "https://www.linkedin.com/in/yassin-abdulmahdi-273561210/",
-     "https://www.instagram.com/yaseen_almahdi5/",
-     "https://t.me/yaseen52"
+    "https://www.linkedin.com/in/yassin-abdulmahdi/",
+    "https://www.instagram.com/yaseen_almahdi5/",
+    "https://t.me/yaseen52"
   ];
-  String _url = 'https://www.linkedin.com/in/yassin-abdulmahdi-273561210/';
+  String _url = 'https://www.linkedin.com/in/yassin-abdulmahdi/';
   String _url2 = 'https://www.instagram.com/yaseen_almahdi5/';
-  String _url3='https://t.me/yaseen52';
+  String _url3 = 'https://t.me/yaseen52';
   void _launchURL() async {
     if (!await launch(_url)) throw 'Could not launch $_url';
   }
 
   void _launchURL2() async {
-    if (!await launch(_url2)) throw 'Could not launch $_url';
+    if (!await launch(_url3)) throw 'Could not launch $_url';
   }
+
   void _launchURL3() async {
     if (!await launch(_url3)) throw 'Could not launch $_url';
   }
@@ -92,13 +93,12 @@ class ContactBox extends StatelessWidget {
                 onTap: _launchURL2,
                 child: SocalCard(
                   color: Color(0xFFE4FFC7),
-                  iconSrc: "assets/images/instagram.png",
+                  iconSrc: "assets/images/Telegram.png",
                   name: 'Yassin',
                   press: () {},
                 ),
               ),
               SizedBox(width: 5),
-            
             ],
           ),
           SizedBox(height: kDefaultPadding * 2),
@@ -115,10 +115,10 @@ class ContactForm extends StatefulWidget {
 }
 
 class _ContactFormState extends State<ContactForm> {
-  final _namecontroller=TextEditingController();
-  final _emalcontroller=TextEditingController();
-  final _subjectcontroller=TextEditingController();
-  final _textcontroller=TextEditingController();
+  final _namecontroller = TextEditingController();
+  final _emalcontroller = TextEditingController();
+  final _subjectcontroller = TextEditingController();
+  final _textcontroller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -132,7 +132,7 @@ class _ContactFormState extends State<ContactForm> {
             child: TextFormField(
               controller: _namecontroller,
               onChanged: (String value) {
-                  _namecontroller.text=value;
+                _namecontroller.text = value;
               },
               decoration: InputDecoration(
                 labelText: "Your Name",
@@ -145,7 +145,7 @@ class _ContactFormState extends State<ContactForm> {
             child: TextFormField(
               controller: _emalcontroller,
               onChanged: (String value) {
-                 _emalcontroller.text=value;
+                _emalcontroller.text = value;
               },
               decoration: InputDecoration(
                 labelText: "Email Address",
@@ -158,7 +158,7 @@ class _ContactFormState extends State<ContactForm> {
             child: TextFormField(
               controller: _subjectcontroller,
               onChanged: (String value) {
-                  _subjectcontroller.text=value;
+                _subjectcontroller.text = value;
               },
               decoration: InputDecoration(
                 labelText: "Project Type",
@@ -166,14 +166,13 @@ class _ContactFormState extends State<ContactForm> {
               ),
             ),
           ),
-     
           SizedBox(
             // height: 300,
             // TextField by default cover the height, i tryed to fix this problem but i cant
             child: TextFormField(
               controller: _textcontroller,
               onChanged: (String value) {
-                  _textcontroller.text=value;
+                _textcontroller.text = value;
               },
               decoration: InputDecoration(
                 labelText: "Description",
@@ -184,17 +183,16 @@ class _ContactFormState extends State<ContactForm> {
           SizedBox(height: kDefaultPadding * 2),
           Center(
             child: FittedBox(
-              child:InkWell(
-              onTap:  signIn,
-             child: Row(
+              child: InkWell(
+                onTap: signIn,
+                child: Row(
                   children: [
-                       Image.asset("assets/images/contact_icon.png", height: 40),
-                   SizedBox(width: kDefaultPadding),
-                  Text("Contact Me!"),
-                     ],
-               ),
-               ),
-              
+                    Image.asset("assets/images/contact_icon.png", height: 40),
+                    SizedBox(width: kDefaultPadding),
+                    Text("Contact Me!"),
+                  ],
+                ),
+              ),
             ),
           )
         ],
@@ -202,25 +200,24 @@ class _ContactFormState extends State<ContactForm> {
     );
   }
 
-   Future sendEmail()async {
-     final smtpServer=gmailSaslXoauth2(_emalcontroller.text, "accessToken");
-     
-       final message=Message()
-       ..from=Address(_emalcontroller.text,_namecontroller.text)
-       ..recipients=['yasinalmhdi8@gmail.com']
-       ..subject=_subjectcontroller.text
-       ..text=_textcontroller.text;
-     
-      try{
-       await send(message, smtpServer);
-        //showSnackBar('Sent email successfully');
-      }
-      on MailerException catch(e){
-          print(e);
-      }
-   }
+  Future sendEmail() async {
+    final smtpServer = gmailSaslXoauth2(_emalcontroller.text, "accessToken");
 
-   /*void showSnackBar(String text){
+    final message = Message()
+      ..from = Address(_emalcontroller.text, _namecontroller.text)
+      ..recipients = ['yasinalmhdi8@gmail.com']
+      ..subject = _subjectcontroller.text
+      ..text = _textcontroller.text;
+
+    try {
+      await send(message, smtpServer);
+      //showSnackBar('Sent email successfully');
+    } on MailerException catch (e) {
+      print(e);
+    }
+  }
+
+  /*void showSnackBar(String text){
       final snackBar=SnackBar(
         content: Text(
            text,
@@ -233,9 +230,7 @@ class _ContactFormState extends State<ContactForm> {
         ..showSnackBar(snackBar);
    }*/
 
-
-   Future signIn() async{
-     await GoogleSignInApi.login();
-      
-   }
+  Future signIn() async {
+    await GoogleSignInApi.login();
+  }
 }

@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:my_profile/models/Certificates.dart';
 import '../../../constants.dart';
 
-
 class Certificatecard extends StatefulWidget {
   const Certificatecard({
-     required this.index,
+    required this.index,
   });
-  
+
   final int index;
   @override
   State<Certificatecard> createState() => _CertificatecardState();
 }
 
 class _CertificatecardState extends State<Certificatecard> {
-    Duration duration = Duration(milliseconds: 200);
+  Duration duration = Duration(milliseconds: 200);
   bool isHover = false;
   @override
   Widget build(BuildContext context) {
@@ -32,8 +31,8 @@ class _CertificatecardState extends State<Certificatecard> {
           duration: duration,
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          height: 400,
-          width: 350,
+          height: 330,
+          width: 280,
           decoration: BoxDecoration(
             color: certificates[widget.index].color,
             borderRadius: BorderRadius.circular(10),
@@ -45,8 +44,8 @@ class _CertificatecardState extends State<Certificatecard> {
                 offset: Offset(0, -55),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 100,
-                  width: 100,
+                  height: 90,
+                  width: 90,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 5),
@@ -62,8 +61,8 @@ class _CertificatecardState extends State<Certificatecard> {
                 certificates[widget.index].review,
                 style: TextStyle(
                   color: kTextColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w300,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
                   fontStyle: FontStyle.italic,
                   height: 1.5,
                 ),
@@ -77,7 +76,7 @@ class _CertificatecardState extends State<Certificatecard> {
           ),
         ),
       ),
-    );;
+    );
+    ;
   }
 }
-

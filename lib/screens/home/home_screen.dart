@@ -7,6 +7,7 @@ import 'package:my_profile/sections/contact/contact_section.dart';
 import 'package:my_profile/sections/feedback/feedback_section.dart';
 import 'package:my_profile/sections/recent_work/recent_work_section.dart';
 import 'package:my_profile/sections/service/service_section.dart';
+import '../../sections/DS_projects/ds_projects_section.dart';
 import '../../sections/experience/experience_section.dart';
 import '../../sections/recent_work2/recent_work2_section.dart';
 import 'components/heightlights.dart';
@@ -27,6 +28,8 @@ class HomeScreen extends StatelessWidget {
         AboutSection(),
         Divider(),
         ExperienceSection(),
+        Divider(),
+        DSprojects(),
         Divider(),
         RecentWorkk(),
         Divider(),

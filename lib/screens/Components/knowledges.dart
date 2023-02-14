@@ -22,6 +22,9 @@ class Knowledges extends StatelessWidget {
           ),
         ),
         KnowledgeText(
+          text: "Python",
+        ),
+        KnowledgeText(
           text: "Flutter, Dart",
         ),
         KnowledgeText(
@@ -39,9 +42,7 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(
           text: "OOP, clean code",
         ),
-         KnowledgeText(
-          text: "OOP, clean code",
-        ),
+         
       ],
     );
   }

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_profile/constants.dart';
-import 'package:my_profile/models/Recentwork2.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class RecentWorkCardd extends StatefulWidget {
-  const RecentWorkCardd({
+import '../../../models/DSprojectsModel.dart';
+
+class DSprojectsCard extends StatefulWidget {
+  const DSprojectsCard({
     required this.index,
     required this.press,
   });
@@ -13,14 +14,14 @@ class RecentWorkCardd extends StatefulWidget {
   final Function press;
 
   @override
-  State<RecentWorkCardd> createState() => _RecentWorkCarddState(
+  State<DSprojectsCard> createState() => _DSprojectsCardState(
         press: press,
         index: index,
       );
 }
 
-class _RecentWorkCarddState extends State<RecentWorkCardd> {
-  _RecentWorkCarddState({
+class _DSprojectsCardState extends State<DSprojectsCard> {
+  _DSprojectsCardState({
     required this.press,
     required this.index,
   });
@@ -29,7 +30,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
   final int index;
 
   List recents = [
-    'https://www.linkedin.com/feed/update/urn:li:activity:6965249047607541760/',
+    'https://github.com/Yassin522/My-webpage-using-streamlit',
     'https://github.com/Yassin522/Wallme',
     'https://github.com/Yassin522/Wallme-admin-panel',
     'https://github.com/Yassin522/Flutter-ai-voice-assistant',
@@ -65,7 +66,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
           height: 300,
           width: 280,
           decoration: BoxDecoration(
-            color: recentworkk[widget.index].color,
+            color: dsproject[widget.index].color,
             borderRadius: BorderRadius.circular(10),
             boxShadow: [if (isHover) kDefaultCardShadow],
           ),
@@ -75,20 +76,20 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
                 offset: Offset(0, -20),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 90,
-                  width: 145,
+                  height: 100,
+                  width: 155,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white, width: 5),
                     boxShadow: [if (!isHover) kDefaultCardShadow],
                     image: DecorationImage(
-                      image: AssetImage(recentworkk[widget.index].userPic),
-                      fit: BoxFit.cover,
+                      image: AssetImage(dsproject[widget.index].userPic),
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),
               ),
               Text(
-                recentworkk[widget.index].review,
+                dsproject[widget.index].review,
                 style: TextStyle(
                   color: kTextColor,
                   fontSize: 12,
@@ -99,7 +100,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
               ),
               SizedBox(height: kDefaultPadding * 2),
               Text(
-                recentworkk[widget.index].name,
+                dsproject[widget.index].name,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.blue,

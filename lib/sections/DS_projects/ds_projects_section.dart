@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_profile/Components/section_title.dart';
 import 'package:my_profile/constants.dart';
-import 'package:my_profile/models/Recentwork2.dart';
-import 'package:my_profile/sections/recent_work2/components/recent_work2_card.dart';
+import 'package:my_profile/sections/DS_projects/components/ds_card.dart';
 
-class RecentWorkk extends StatelessWidget {
+import '../../models/DSprojectsModel.dart';
+
+class DSprojects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,7 +14,7 @@ class RecentWorkk extends StatelessWidget {
       child: Column(
         children: [
           SectionTitle(
-            title: "Recent Work",
+            title: "Data Science and Python work",
             subTitle: "My own projects for training and building skills",
             color: Color(0xFF00B1FF),
           ),
@@ -38,8 +39,8 @@ class RecentWorkk extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(
-                recentworkk.length,
-                (index) => RecentWorkCardd(index: index, press: () {}),
+                dsproject.length,
+                (index) => DSprojectsCard(index: index, press: () {}),
               ),
             ),
           ),

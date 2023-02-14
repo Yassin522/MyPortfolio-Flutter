@@ -63,7 +63,7 @@ class _SideMenueState extends State<SideMenue> {
                     ),
                     AreaInfoText(
                       title: "Age",
-                      text: "21",
+                      text: "23",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),

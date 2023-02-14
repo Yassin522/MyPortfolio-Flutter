@@ -21,33 +21,44 @@ class Skills extends StatelessWidget {
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
-        Row(
-          children: [
-            Expanded(
-              child: AnimatedCircularProgressIndacator(
-                percentage: 0.6,
-                label: "Flutter",
+        SingleChildScrollView(
+          child: Row(
+            children: [
+              Expanded(
+                child: AnimatedCircularProgressIndacator(
+                  percentage: 0.6,
+                  label: "Python",
+                ),
               ),
-            ),
-            SizedBox(
-              width: defaultPadding,
-            ),
-            Expanded(
-              child: AnimatedCircularProgressIndacator(
-                percentage: 0.6,
-                label: "Python",
+              SizedBox(
+                width: defaultPadding,
               ),
-            ),
-            SizedBox(
-              width: defaultPadding,
-            ),
-            Expanded(
-              child: AnimatedCircularProgressIndacator(
-                percentage: 0.4,
-                label: "ML",
+              Expanded(
+                child: AnimatedCircularProgressIndacator(
+                  percentage: 0.6,
+                  label: "Flutter",
+                ),
               ),
-            ),
-          ],
+              SizedBox(
+                width: defaultPadding,
+              ),
+              Expanded(
+                child: AnimatedCircularProgressIndacator(
+                  percentage: 0.4,
+                  label: "ML",
+                ),
+              ),
+              SizedBox(
+                width: defaultPadding,
+              ),
+              Expanded(
+                child: AnimatedCircularProgressIndacator(
+                  percentage: 0.7,
+                  label: "Git",
+                ),
+              ),
+            ],
+          ),
         )
       ],
     );

@@ -33,8 +33,8 @@ class _FeedbackCardState extends State<FeedbackCard> {
           duration: duration,
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          height: 350,
-          width: 350,
+          height: 300,
+          width: 280,
           decoration: BoxDecoration(
             color: feedbacks[widget.index].color,
             borderRadius: BorderRadius.circular(10),
@@ -46,8 +46,8 @@ class _FeedbackCardState extends State<FeedbackCard> {
                 offset: Offset(0, -55),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 100,
-                  width: 100,
+                  height: 90,
+                  width: 90,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 5),
@@ -62,7 +62,7 @@ class _FeedbackCardState extends State<FeedbackCard> {
                 feedbacks[widget.index].review,
                 style: TextStyle(
                   color: kTextColor,
-                  fontSize: 18,
+                  fontSize: 12,
                   fontWeight: FontWeight.w300,
                   fontStyle: FontStyle.italic,
                   height: 1.5,

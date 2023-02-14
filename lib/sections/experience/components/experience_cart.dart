@@ -33,8 +33,8 @@ class _ExperiencecardState extends State<Experiencecard> {
           duration: duration,
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          height: 370,
-          width: 350,
+          height: 300,
+          width: 280,
           decoration: BoxDecoration(
             color: experiences[widget.index].color,
             borderRadius: BorderRadius.circular(10),
@@ -47,8 +47,8 @@ class _ExperiencecardState extends State<Experiencecard> {
                 offset: Offset(0, -55),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 100,
-                  width: 100,
+                  height: 90,
+                  width: 90,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 5),
@@ -64,21 +64,25 @@ class _ExperiencecardState extends State<Experiencecard> {
                 experiences[widget.index].review,
                 style: TextStyle(
                   color: kTextColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w300,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
                   fontStyle: FontStyle.italic,
                   height: 1.5,
                 ),
               ),
               Text(
                 experiences[widget.index].duration,
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: kTextColor),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: kTextColor,
+                    fontSize: 13),
               ),
               Text(
                 experiences[widget.index].name,
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: kTextColor),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: kTextColor,
+                    fontSize: 13),
               )
             ],
           ),
