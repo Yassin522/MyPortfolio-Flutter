@@ -22,7 +22,7 @@ class Coding extends StatelessWidget {
           ),
         ),
         AnimatedLinearProgressIndicator(
-          precentage: 0.6,
+          precentage: 0.7,
           label: "Python",
         ),
         AnimatedLinearProgressIndicator(
@@ -30,7 +30,7 @@ class Coding extends StatelessWidget {
           label: "C++",
         ),
         AnimatedLinearProgressIndicator(
-          precentage: 0.6,
+          precentage: 0.7,
           label: "Dart",
         ),
         AnimatedLinearProgressIndicator(

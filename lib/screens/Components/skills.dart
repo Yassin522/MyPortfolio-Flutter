@@ -26,7 +26,7 @@ class Skills extends StatelessWidget {
             children: [
               Expanded(
                 child: AnimatedCircularProgressIndacator(
-                  percentage: 0.6,
+                  percentage: 0.7,
                   label: "Python",
                 ),
               ),
@@ -44,7 +44,7 @@ class Skills extends StatelessWidget {
               ),
               Expanded(
                 child: AnimatedCircularProgressIndacator(
-                  percentage: 0.4,
+                  percentage: 0.6,
                   label: "ML",
                 ),
               ),

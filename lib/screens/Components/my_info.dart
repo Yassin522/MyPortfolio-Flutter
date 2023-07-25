@@ -28,7 +28,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "CS studeant\nPython Developer  \n Contestant at ICPC | ACM",
+              "CS studeant\n ML Engineer  \n Contestant at ICPC | ACM",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,

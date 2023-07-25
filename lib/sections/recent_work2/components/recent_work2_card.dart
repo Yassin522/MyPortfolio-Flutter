@@ -29,7 +29,7 @@ class _RecentWorkCarddState extends State<RecentWorkCardd> {
   final int index;
 
   List recents = [
-    'https://www.linkedin.com/feed/update/urn:li:activity:6965249047607541760/',
+    'https://github.com/Yassin522/SchoolMate-Dashboard',
     'https://github.com/Yassin522/Wallme',
     'https://github.com/Yassin522/Wallme-admin-panel',
     'https://github.com/Yassin522/Flutter-ai-voice-assistant',

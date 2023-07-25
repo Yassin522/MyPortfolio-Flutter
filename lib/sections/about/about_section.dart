@@ -105,6 +105,19 @@ class AboutSection extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(width: kDefaultPadding),
+              InkWell(
+                onTap: _launchURL,
+                child: Row(
+                  children: [
+                    Image.asset(
+                      "assets/images/linkedin2.png",
+                      height: 30,
+                      color: Colors.blue,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ],
@@ -114,7 +127,7 @@ class AboutSection extends StatelessWidget {
 
   String _url = 'https://www.linkedin.com/in/yassin-abdulmahdi/';
   String _url2 =
-      'https://drive.google.com/file/d/1-upu-fl8j4K-43j2Y4N8crT-ELSaGZOP/view?usp=sharing';
+      'https://drive.google.com/file/d/1fktibR3W6WnGPUkUY1bSvSnhk-KaMLcr/view?usp=drive_link';
   String _url3 =
       'https://www.kaggle.com/yassinabdulmahdi/Home?isEditing=False&verifyPhone=False';
   String _url4 = 'https://github.com/Yassin522';

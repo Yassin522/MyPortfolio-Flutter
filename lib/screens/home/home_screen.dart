@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
         Divider(),
         CertificateSection(),
         Divider(),
-        ContactSection(),
+        // ContactSection(),
       ],
     );
   }

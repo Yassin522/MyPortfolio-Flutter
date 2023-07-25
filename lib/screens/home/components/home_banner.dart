@@ -43,7 +43,7 @@ class HomeBanner extends StatelessWidget {
                 ),
                 if (Responsive.isMobileLarge(context))
                   const SizedBox(height: defaultPadding / 2),
-                MyBuildAnimatedText(),
+                // MyBuildAnimatedText(),
 
                 MyBuildAnimatedText2(),
 
@@ -180,7 +180,13 @@ class AnimatedText2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedTextKit(
       animatedTexts: [
+        TyperAnimatedText("Interactive Drawing Education System for Children",
+            speed: Duration(milliseconds: 200)),
         TyperAnimatedText("Heartbeat Categorization system",
+            speed: Duration(milliseconds: 100)),
+        TyperAnimatedText("web app using Streamlit",
+            speed: Duration(milliseconds: 100)),
+        TyperAnimatedText("Exploring the Evolution of Linux model",
             speed: Duration(milliseconds: 100)),
       ],
     );
@@ -199,7 +205,7 @@ class FlutterCodedText2 extends StatelessWidget {
         text: "<",
         children: [
           TextSpan(
-            text: "Ai",
+            text: "Data Science",
             style: TextStyle(
               color: primaryColor,
             ),

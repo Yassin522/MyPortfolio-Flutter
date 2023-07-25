@@ -30,14 +30,11 @@ class _DSprojectsCardState extends State<DSprojectsCard> {
   final int index;
 
   List recents = [
+    'https://github.com/Yassin522/Interactive-Drawing-Education-System-for-Children',
     'https://github.com/Yassin522/My-webpage-using-streamlit',
-    'https://github.com/Yassin522/Wallme',
-    'https://github.com/Yassin522/Wallme-admin-panel',
-    'https://github.com/Yassin522/Flutter-ai-voice-assistant',
-    'https://github.com/Yassin522/MyPortfolio-Flutter',
-    'https://github.com/Yassin522/eBook-app',
-    'https://github.com/Yassin522/Movie-App',
-    'https://github.com/Yassin522/Mpes',
+    'https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Heartbeat-Categorization',
+    'https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux',
+    'https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Give%20Life_%20Predict%20Blood%20Donations',
   ];
 
   void _launchURL() async {
@@ -63,8 +60,8 @@ class _DSprojectsCardState extends State<DSprojectsCard> {
           duration: duration,
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          height: 300,
-          width: 280,
+          height: 340,
+          width: 300,
           decoration: BoxDecoration(
             color: dsproject[widget.index].color,
             borderRadius: BorderRadius.circular(10),
@@ -76,7 +73,7 @@ class _DSprojectsCardState extends State<DSprojectsCard> {
                 offset: Offset(0, -20),
                 child: AnimatedContainer(
                   duration: duration,
-                  height: 90,
+                  height: 100,
                   width: 145,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.white, width: 5),
@@ -104,9 +101,9 @@ class _DSprojectsCardState extends State<DSprojectsCard> {
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.blue,
-                    fontSize: 13),
+                    fontSize: 11),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 5),
               InkWell(
                 onTap: _launchURL,
                 child: Text(
