@@ -46,12 +46,12 @@ List<DSProject> dsproject = [
     userPic: "assets/images/linux.jpg",
     color: Color(0xFFFFF3DD),
   ),
-  // DSProject(
-  //   id: 5,
-  //   name: "Give Life: Predict Blood Donations",
-  //   review:
-  //       "Built a machine learning model using Python and Scikit-learn to predict blood donation behavior of donors",
-  //   userPic: "assets/images/blood.jpeg",
-  //   color: Color(0xFFFFF3DD),
-  // ),
+  DSProject(
+    id: 5,
+    name: "Give Life: Predict Blood Donations",
+    review:
+        "Built a machine learning model using Python and Scikit-learn to predict blood donation behavior of donors",
+    userPic: "assets/images/blood.jpeg",
+    color: Color(0xFFFFF3DD),
+  ),
 ];

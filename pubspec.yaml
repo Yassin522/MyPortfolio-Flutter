@@ -26,7 +26,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^0.22.0
-  google_fonts: ^2.1.0
+  google_fonts: ^4.0.4 
   google_sign_in: ^5.2.4
   mailer: ^5.1.0
   responsive_framework: ^0.1.7
